@@ -1,17 +1,14 @@
 :root {
     --bg-dark-grey: rgb(46, 45, 56);
     --text-white: white;
-    --text-purple: #e867ed;
-}
-
-
-* {
-    border: 3px solid red;
+    --light-purple: #e867ed;
+    --dark-purple: rgba(232, 102, 236, 0.3);
 }
 
 body {
     background-color: var(--bg-dark-grey);
     color: var(--text-white);
+    line-height: 1.3;
 }
 
 header {
@@ -19,6 +16,15 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+main {
+    padding: 16px;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 code {
@@ -31,21 +37,63 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--text-purple);
+    color: var(--light-purple);
+}
+
+h1 {
+    margin: 24px 0;
+}
+
+p {
+    margin: 0 0 16px 0;
+}
+
+header p {
+    padding: 0 15%;
+}
+
+.border-radius {
+    border-radius: 15px;
+}
+
+.card {
+   flex: 0 0 100%;
+   max-width: 100%;
+   padding: 16px;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px dashed var(--text-white);
+}
+
+.card .card-column pre {
+    padding: 0 16px;
+    white-space: break-spaces;
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100% );
+}
+
+.card code {
+    font-family: monospace;
+    font-size: .9rem;
 }
 
 
 @media screen and (min-width: 768px) {
-    /* todo - implement medium screen size */
-    * {
-    border-color: blue;
+    .card {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }
 
 @media screen and (min-width: 992px) {
-    /* todo- inpliment large screen size */
-    * {
-        border-color: green;
+   .card {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
     }
 }
 
