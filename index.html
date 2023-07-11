@@ -22,7 +22,7 @@
         <section>
             <div class="card">
                 <div class="card-column">
-                    <h2>Flexbox Row</h2>
+                    <h2 class="border-radius">Flexbox Row</h2>
                     <p>Use these three properties to create a Flexbox row layout.
                     </p>
                     <pre class="border-radius">
@@ -40,7 +40,7 @@
 
             <div class="card">
                 <div class="card-column">
-                    <h2>Flexbox Column</h2>
+                    <h2 class="border-radius">Flexbox Column</h2>
                     <p>Use this to create a Flexbox column layout.</p>
                     <pre class="border-radius">
                         <code>
@@ -56,7 +56,7 @@
 
             <div class="card">
                 <div class="card-column">
-                    <h2>CSS Grid Layout</h2>
+                    <h2 class="border-radius">CSS Grid Layout</h2>
                     <p>Build a 12-column layout using CSS Grid</p>
                     <pre class="border-radius">
                         <code>
@@ -76,7 +76,7 @@
         <section> -->
             <div class="card">
                 <div class="card-column">
-                    <h2>Linear Gradients</h2>
+                    <h2 class="border-radius">Linear Gradients</h2>
                 <p>This will create a background linear gradient from top to bottom.</p>
                 <pre class="border-radius">
                     <code>
@@ -94,19 +94,13 @@
 
             <div class="card">
                 <div class="card-column">
-                    <h2>Box Transition Glow</h2>
+                    <h2 class="border-radius">Box Transition Glow</h2>
                 <p>Use transition and box shadows to glow on hover.</p>
                 <pre class="border-radius">
                     <code>
-    .code-card .card-header {
-    border-radius: 8px;
+.card-column:hover, .card-column:hover h2 {
     transition: all 0.5s ease-in-out;
-}
-
-.code-card:hover,.code-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px
-    rgba(232, 102, 236, 1), 0 0 15px
-    rgba(232, 102, 236, 1);
+    box-shadow: inset 0px 0px 8px var(--light-purple), 0 0 15px var(--light-purple);
 }
                     </code>
 
@@ -117,7 +111,7 @@
 
             <div class="card">
                 <div class="card-column">
-                    <h2>Overlay Card with Title</h2>
+                    <h2 class="border-radius">Overlay Card with Title</h2>
                 <p>Use position properties and negative margins to raise elemenets higher than their natural starting
                     point.</p>
                 <pre class="border-radius">

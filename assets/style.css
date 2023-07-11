@@ -18,6 +18,13 @@ header {
     text-align: center;
 }
 
+footer {
+    font-size: 1.2rem;
+    color: var(--light-purple);
+    text-align: center;
+    font-weight: bold;
+}
+
 main {
     padding: 16px;
 }
@@ -53,13 +60,25 @@ header p {
 }
 
 .border-radius {
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .card {
    flex: 0 0 100%;
    max-width: 100%;
    padding: 16px;
+   color: var(--light-purple);
+   font-size: .8rem;
+}
+
+.card h2 {
+    position: relative;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border: 1px solid var(--text-white);
+    margin-top: -30px;
+    margin-bottom: 30px;
+    background-color: var(--bg-dark-grey);
 }
 
 .card-column {
@@ -67,9 +86,17 @@ header p {
     flex-direction: column;
     padding: 16px;
     border: 1px dashed var(--text-white);
+    height: 100%;
 }
 
+.card-column:hover, .card-column:hover h2 {
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 8px var(--light-purple), 0 0 15px var(--light-purple);
+}
+
+
 .card .card-column pre {
+    flex: 1;
     padding: 0 16px;
     white-space: break-spaces;
     background-image: linear-gradient(
@@ -77,9 +104,14 @@ header p {
         rgba(232, 102, 236, 0.6) 100% );
 }
 
+.card .card-column pre:active {
+    user-select: all;
+}
+
 .card code {
     font-family: monospace;
     font-size: .9rem;
+    color: var(--text-white);
 }
 
 
